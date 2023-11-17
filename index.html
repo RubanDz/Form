@@ -4,15 +4,21 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Form</title>
+   <style>
+      .form {
+         width: 50%;
+      }
+
+   </style>
 </head>
 <body>
-   <form action="">
+   <form class="form" action="#" autocomplete="on" method="post" name="form__name" enctype="application/x-www-form-urlencoded">
       <fieldset>
          <legend>Общая информация</legend>
          <label for="name">Введите имя</label>
          <input type="text" id="name" placeholder="Имя">
          <label for="date">Дата рождения</label>
-         <input type="date" id="date">
+         <input type="date" id="date" value="2023-11-17" min="2023-11-17" max="2023-12-31">
       </fieldset>
       <fieldset>
          <legend>Контактная информация</legend>
@@ -39,7 +45,7 @@
          <label for="radio__angular">Angular</label>
          <input type="radio" id="radio__angular">
          <label for="radio__vue">Vue</label>
-         <input type="radio" id="radio__vue">
+         <input type="radio" id="radio__vue" checked>
       </fieldset>
       <fieldset>
          <legend>Срок обучения</legend>
