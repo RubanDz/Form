@@ -7,7 +7,7 @@
   
 </head>
 <body>
-   <form class="form" action="#" autocomplete="on" method="post" name="form__name" enctype="application/x-www-form-urlencoded">
+   <form id="example" action="#" autocomplete="on" method="post" name="form__name" enctype="application/x-www-form-urlencoded">
       <fieldset>
          <legend>Общая информация</legend>
          <label for="name">Введите имя</label>
@@ -51,9 +51,9 @@
          <label for="submit">Отправить файл</label>
          <input type="file" id="submit" multiple>
       </fieldset>
-      <input type="submit" value="Отправка формы">
-      <input type="reset">
    </form>
+   <input type="submit" value="Отправка формы" form="example">
+   <input type="reset" form="example">
 </body>
 </html>
    
